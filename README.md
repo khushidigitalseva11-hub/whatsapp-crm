@@ -1,187 +1,175 @@
-# wacrm — CRM Template for WhatsApp
+# 🤖 JARVIS — AI Social Media Content & Marketing Operating System
+### Shree Radhe Krishna Digital Service (શ્રી રાધે કૃષ્ણ ડિજિટલ સેવા)
+**Location:** Rudra Complex, Timberwa Road, Sadhli, Taluka: Shinor, District: Vadodara, Gujarat 391250  
+**Public Inquiries:** [khushidigitalseva11@gmail.com](mailto:khushidigitalseva11@gmail.com) *(Strict Email-Only Public Policy)*  
 
-> Self-hostable CRM template for WhatsApp® — shared inbox, contacts,
-> sales pipelines, broadcasts, and no-code automations. Fork it, brand
-> it, host it.
+---
 
-<p align="center">
-  <a href="https://www.hostinger.com/web-apps-hosting?REFERRALCODE=WACRMHOST">
-    <img src="./.github/assets/hostinger-deploy.png" alt="Ship your Node.js app in one click — Deploy to Hostinger" width="900">
-  </a>
-</p>
+[![Production Deployment](https://img.shields.io/badge/Vercel-Deployed-success?logo=vercel)](https://whatsapp-crm-khushidigitalseva11-hub.vercel.app)
+[![Supabase Database](https://img.shields.io/badge/Supabase-Cloud%20Postgres-3ecf8e?logo=supabase)](https://supabase.com)
+[![Next.js 16](https://img.shields.io/badge/Next.js-16%20Turbopack-black?logo=nextdotjs)](https://nextjs.org)
+[![React 19](https://img.shields.io/badge/React-19-61dafb?logo=react)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict%20Mode-blue?logo=typescript)](https://www.typescriptlang.org)
+[![Tests Passing](https://img.shields.io/badge/Vitest-1075%2F1075%20Passed-success?logo=vitest)](./vitest.config.ts)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-violet.svg)](./LICENSE)
-[![CI](https://github.com/ArnasDon/wacrm/actions/workflows/ci.yml/badge.svg)](https://github.com/ArnasDon/wacrm/actions/workflows/ci.yml)
-[![Next.js 16](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)](https://nextjs.org)
-[![Supabase](https://img.shields.io/badge/Supabase-Postgres%20%2B%20Auth-3ecf8e?logo=supabase)](https://supabase.com)
-[![Stars](https://img.shields.io/github/stars/ArnasDon/wacrm?style=social)](https://github.com/ArnasDon/wacrm/stargazers)
+---
 
-The marketing site and self-host docs live in a separate repo:
-[ArnasDon/wacrm-site](https://github.com/ArnasDon/wacrm-site)
-([wacrm.tech](https://wacrm.tech)). This repo is the product —
-clone or fork it to run your own CRM.
+## 📌 Overview
 
-## What you get out of the box
+**JARVIS** is an end-to-end AI-powered Social Media Marketing & Operations Operating System designed for **Shree Radhe Krishna Digital Service**. It unifies:
 
-- **Shared inbox** on the official WhatsApp Business API — multiple
-  agents working one number, per-conversation assignment, status, and
-  notes.
-- **Contacts + tags + custom fields**, CSV import, deduplication.
-- **Sales pipelines** (Kanban) with deals linked to conversations.
-- **Broadcasts** with Meta-approved templates, delivery + read
-  tracking, per-recipient variable substitution.
-- **No-code automations** — triggers on inbound messages, new
-  contacts, keywords, or schedule; conditional branches, waits,
-  tags, webhooks. Visual builder.
-- **AI reply assistant** — bring your own OpenAI or Anthropic key
-  (stored encrypted; no per-seat AI fee, your data stays yours).
-  One-click AI-drafted replies in the inbox, plus an optional
-  auto-reply bot with a per-conversation cap and clean human handoff.
-  Add a **knowledge base** (FAQs, policies, product docs) and it
-  answers from your own content — hybrid retrieval (Postgres full-text,
-  or semantic pgvector when an embeddings key is set).
-- **Real-time dashboard** — response times, daily volume, pipeline
-  value, cross-module activity feed.
-- **Team accounts** — invite teammates by link, role-based access
-  (owner / admin / agent / viewer), ownership transfer. Every install
-  is account-scoped, so one shared inbox can be staffed by a whole
-  team. Solo use stays single-user with zero setup.
-- **Account management** — email, password, avatar, global sign-out.
-- **Public REST API** (`/api/v1`) with scoped, revocable API keys —
-  build your own automations on top of your CRM. See
-  [docs/public-api.md](./docs/public-api.md).
-- **MCP server** — drive your CRM from Claude, Cursor, and other AI
-  assistants over the [Model Context Protocol](https://modelcontextprotocol.io).
-  Read-only by default, opt-in writes. See [docs/mcp.md](./docs/mcp.md)
-  (server in [`mcp-server/`](./mcp-server)).
+1. **Autonomous Marketing Engine:** Generates high-retention bilingual Gujarati & English video concepts, hooks, and 10-second shot storyboards.
+2. **Citizen Digital Services Portal:** Complete facilitation for 21 government and online citizen services with transparent locked pricing.
+3. **Private WhatsApp CRM:** Multi-agent shared inbox, automations, broadcasts, and AI lead assistance powered by the official Meta WhatsApp Cloud API.
+4. **Integrations Manager:** Zero-trust credentials manager for Supabase, Meta, OpenAI, Gemini, Flow AI, and Razorpay.
 
-## Why fork this?
+---
 
-This is a **template**, not a product. Forking means you get:
+## 🚀 The 15-Module JARVIS Studio Lifecycle
 
-- **Full ownership** — your code, your Supabase project, your domain,
-  your data. No SaaS lock-in, no seat pricing, no trust dance.
-- **Full customisation** — add the fields your team needs, remove the
-  modules you don't, redesign anything. The stack is boring on
-  purpose (Next.js + Supabase + Tailwind) so the learning curve is
-  short.
-- **Zero ops to start** — [Hostinger](https://www.hostinger.com/web-apps-hosting?REFERRALCODE=WACRMHOST)
-  Managed Node.js deploys a fork in a few clicks. No Docker, no
-  Kubernetes, no infra team needed.
-  ([See below ↓](#-deploy-on-hostinger-recommended))
-- **Real security primitives** — token encryption (AES-256-GCM), RLS
-  on every table, HMAC-verified webhooks, CSP, rate limiting, CI
-  typecheck/build on every PR.
-
-Not a framework. Not an SDK. A concrete, working CRM you can stand up
-in an afternoon and make yours.
-
-## Quick start
-
-```bash
-# Fork on GitHub first: https://github.com/ArnasDon/wacrm → Fork
-git clone https://github.com/<your-username>/wacrm.git
-cd wacrm
-npm install
-cp .env.local.example .env.local   # fill in Supabase + Meta creds
-npm run dev
+```mermaid
+graph TD
+    A[1. AI Brain & Ideation] --> B[2. Script Studio & Versioning]
+    B --> C[3. Shot Storyboard & Framing]
+    C --> D[4. Flow AI 10s Clip Pacing]
+    D --> E[5. Image & Vector Text Engine]
+    E --> F[6. JSON Pipeline Spec]
+    F --> G[7. Video Assembly & Audio]
+    G --> H[8. QA & Compliance Gate]
+    H --> I[9. Human Approval Checkpoint]
+    I --> J[10. Content Calendar]
+    J --> K[11. Social Dispatch & Publishing]
+    K --> L[12. WhatsApp CRM Lead Bridge]
+    L --> M[13. Analytics & Conversions]
+    M --> N[14. Persistent Memory Loop]
+    N --> O[15. Cost & Budget Safety]
 ```
 
-Open <http://localhost:3000>. You'll be redirected to `/login` (or
-`/dashboard` if already signed in).
+### Module Highlights
 
-The UI ships in English, Korean, Brazilian Portuguese and Spanish — set
-`NEXT_PUBLIC_APP_LOCALE` to `en`, `ko`, `pt` or `es` in `.env.local`
-(catalogues live in `messages/`).
+| Module | Core Functionality |
+| :--- | :--- |
+| **1. AI Brain & Ideation** | Generates tailored marketing angles for farmers, youth, seniors, and MSMEs across 21 citizen services. |
+| **2. Script Studio** | Dual-version (V1 & V2) bilingual Gujarati + English scripts with 3-second retention hooks and clear CTAs. |
+| **3. Shot Storyboard** | 9:16 vertical mobile framing, camera angles, lighting notes, and Gujarati on-screen text badges. |
+| **4. Flow AI 10s Pacing** | Strictly splits videos into 10-second clips with consistent character, voice, and lighting continuity. |
+| **5. Image & Overlay** | Vector Gujarati typography overlay without baked-in image text distortion. |
+| **6. JSON Spec** | Machine-readable prompt specifications for headless video renderers. |
+| **7. Video Assembly** | Multi-track timeline preview with background music (BGM), audio ducking, and subtitle toggles. |
+| **8. QA & Compliance** | 6-point compliance checklist: price accuracy, document checklist, phone-free public CTA, and duration rules. |
+| **9. Human Approval** | 3-state governance workflow (`Draft` $\to$ `Pending Review` $\to$ `Approved`). |
+| **10. Content Calendar** | Multi-platform scheduling for Instagram Reels, YouTube Shorts, and WhatsApp Status. |
+| **11. Social Dispatch** | Auto-publishing via Meta Graph API or one-click **"Copy Post Package"** manual fallback. |
+| **12. CRM Lead Bridge** | Inbound WhatsApp query analysis, instant service detection, locked fee lookup, and suggested responses. |
+| **13. Analytics & Conversions**| Tracks campaign views against actual digital seva applications and revenue generated. |
+| **14. Persistent Memory** | AI feedback loop tracking top-performing hooks, optimal durations, and brand preferences. |
+| **15. Cost & Budget** | Per-project budget caps and estimated API usage monitoring to prevent runaway costs. |
 
-Prefer containers? See [docs/docker.md](./docs/docker.md) for the
-Dockerfile + Docker Compose setup.
+---
 
-## 🚀 Deploy on Hostinger (recommended)
+## 🏛️ Citizen Digital Services Catalog (21 Services)
 
-<p align="center">
-  <a href="https://www.hostinger.com/web-apps-hosting?REFERRALCODE=WACRMHOST">
-    <img src="./.github/assets/hostinger-deploy.png" alt="Ship your Node.js app in one click — Deploy to Hostinger" width="1000">
-  </a>
-</p>
-<p align="center">
-  <a href="https://wacrm.tech/docs/deployment-hostinger">
-    <img src="https://img.shields.io/badge/Step--by--step_guide-wacrm.tech%2Fdocs-111?style=for-the-badge" alt="Step-by-step guide" height="44">
-  </a>
-</p>
+All services operate with **transparent, locked pricing** and standard required document checklists:
 
-**wacrm is built to run on [Hostinger](https://www.hostinger.com/web-apps-hosting?REFERRALCODE=WACRMHOST).**
-It's the path we test, document, and recommend — and the fastest way
-to get a production-grade CRM live without owning a VPS or a
-Kubernetes cluster.
+| # | Service Name (English) | સેવા નામ (ગુજરાતી) | Locked Price | Typical Delivery |
+| :---: | :--- | :--- | :---: | :---: |
+| 1 | **PAN Card** | નવું પાન કાર્ડ / સુધારો | **₹250** | 3–5 Days |
+| 2 | **Aadhaar Services** | આધાર કાર્ડ પ્રિન્ટ / સહાય | **₹50** | Instant |
+| 3 | **Ayushman Bharat Card** | આયુષ્માન ભારત કાર્ડ | **₹50** | Same Day |
+| 4 | **E-Shram Card** | ઇ-શ્રમ કાર્ડ રજીસ્ટ્રેશન | **₹60** | Same Day |
+| 5 | **Election Voter ID** | ચૂંટણી કાર્ડ / સુધારો | **₹80** | 7–10 Days |
+| 6 | **Ration Card** | રેશન કાર્ડ સેવાઓ | **₹150** | 7–15 Days |
+| 7 | **Income Certificate** | આવકનો દાખલો | **₹150** | 3–5 Days |
+| 8 | **Caste Certificate** | જાતિનો દાખલો | **₹150** | 5–7 Days |
+| 9 | **Domicile Certificate** | ડોમિસાઇલ સર્ટિફિકેટ | **₹200** | 5–7 Days |
+| 10 | **Driving Licence Assistance** | ડ્રાઇવિંગ લાયસન્સ સહાય | **₹350** | Slot based |
+| 11 | **Passport Assistance** | પાસપોર્ટ ઓનલાઇન ફોર્મ | **₹500** | Appointment |
+| 12 | **Electricity Bill Payment** | લાઈટ બિલ પેમેન્ટ & પ્રિન્ટ | **₹20** | Instant |
+| 13 | **7/12 & 8A Land Records** | ૭/૧૨ અને ૮-અ જમીન ઉતારા | **₹50** | Instant |
+| 14 | **Digital Gujarat Scholarships** | ડિજિટલ ગુજરાત સ્કોલરશિપ | **₹150** | Season based |
+| 15 | **Police Verification Form** | પોલીસ વેરિફિકેશન ફોર્મ | **₹100** | 1–2 Days |
+| 16 | **PF / EPFO Withdrawal** | પીએફ ઉપાડ ઓનલાઇન ક્લેમ | **₹300** | 7–14 Days |
+| 17 | **Job Application Forms** | સરકારી ભરતી ઓનલાઇન ફોર્મ | **₹100** | Same Day |
+| 18 | **Fastag Recharge & Issuance** | ફાસ્ટેગ રિચાર્જ / નવું કાર્ડ | **₹100** | Instant |
+| 19 | **PVC Smart Card Printing** | પીવીસી પ્લાસ્ટિક સ્માર્ટ કાર્ડ | **₹70** | Instant Print |
+| 20 | **Gumasta Dhara / Shop Act** | ગુમાસ્તા ધારા નોંધણી | **₹300** | 2–3 Days |
+| 21 | **Udyam MSME Registration** | ઉદ્યમ આધાર / એમએસએમઇ | **₹250** | 1–2 Days |
 
-### Why Hostinger?
+---
 
-| | |
-|---|---|
-| **One-click Git deploy** | Connect your fork, push to `main`, Hostinger builds and ships it. No SSH, no Docker, no CI to wire up — this repo's own `main` deploys this way. |
-| **Managed Node.js** | Next.js 16 (App Router, server actions, ISR) runs out of the box on [Premium, Business, and Cloud](https://www.hostinger.com/web-apps-hosting?REFERRALCODE=WACRMHOST) shared plans. You don't manage Node versions, processes, or reverse proxies. |
-| **Free SSL + free domain** | Automatic Let's Encrypt on your custom domain (or a free one included with annual plans). HTTPS is on by default — required for the WhatsApp Business webhook. |
-| **Global CDN + LiteSpeed** | Static assets cached at the edge, dynamic routes served from LiteSpeed. Snappy dashboards out of the box, no Cloudflare setup required. |
-| **Env vars + logs in hPanel** | Set `SUPABASE_*`, `WHATSAPP_*`, and `ENCRYPTION_KEY` from the panel — no `.env` on the server. Live application logs in the same UI. |
-| **DDoS protection + daily backups** | Built-in, no add-ons. The webhook endpoint is a public target — having protection at the edge matters. |
-| **Cheaper than a VPS** | Plans start at a few dollars a month — order-of-magnitude less than a comparable managed Node.js host, and you don't pay extra for the database (that's Supabase). |
-| **24/7 human support** | Live chat support in 20+ languages — useful when your CRM is the thing your team relies on to talk to customers. |
+## 🔒 Strict Public Contact & Privacy Policy
 
-### The 60-second version
+- **Public Marketing & Citizen Portal:**
+  - **Email Only:** `khushidigitalseva11@gmail.com`
+  - Public pages strictly contain **0 phone numbers, 0 `wa.me` links, and 0 `tel:` tags**.
+- **Private Internal WhatsApp CRM:**
+  - Official WhatsApp Business communication runs strictly through the authenticated Meta Cloud API from authorized server endpoints.
 
-1. **Fork** this repo on GitHub.
-2. In **hPanel → Websites → Create**, pick **Node.js** and connect
-   your fork.
-3. Paste your Supabase + Meta env vars into hPanel.
-4. Push to `main`. Hostinger builds and serves it. Done.
+---
 
-Full walkthrough with screenshots:
-**[wacrm.tech/docs/deployment-hostinger](https://wacrm.tech/docs/deployment-hostinger)**.
+## 🛠️ Tech Stack & Architecture
 
-> _Note: wacrm is MIT-licensed and runs anywhere Node.js does
-> (Vercel, Railway, your own VPS). Hostinger is recommended, not
-> required._
+- **Frontend:** Next.js 16 (App Router, Turbopack), React 19, Tailwind CSS v4, Lucide Icons.
+- **Backend:** Next.js Server Components, Route Handlers, Edge & Node runtimes.
+- **Database:** Supabase PostgreSQL Cloud, pgvector embeddings, 42 safe migrations, Row Level Security (RLS).
+- **CRM Integration:** Official Meta WhatsApp Cloud API (v20.0+), HMAC webhook verification, AES-256-GCM encrypted tokens.
+- **Testing:** Vitest test suite (91 test files, 1,075 passing tests), Next.js typecheck (`tsc --noEmit`).
 
-## Documentation
+---
 
-Full self-host documentation — Supabase migrations, WhatsApp Business
-API config, and production deploy — lives at
-**[wacrm.tech/docs](https://wacrm.tech/docs)**
-(source: [ArnasDon/wacrm-site](https://github.com/ArnasDon/wacrm-site)).
+## ⚙️ Environment Configuration
 
-Key pages:
-- [Getting started](https://wacrm.tech/docs/getting-started)
-- [Supabase setup](https://wacrm.tech/docs/supabase-setup)
-- [WhatsApp setup](https://wacrm.tech/docs/whatsapp-setup)
-- [Environment variables](https://wacrm.tech/docs/environment-variables)
-- [Deploy on Hostinger](https://wacrm.tech/docs/deployment-hostinger)
-- [Architecture](https://wacrm.tech/docs/architecture)
-- [Troubleshooting](https://wacrm.tech/docs/troubleshooting)
-- [WhatsApp connection troubleshooting](./docs/whatsapp-connection-troubleshooting.md)
-  — what each "Save Configuration" error means, and the Meta code /
-  trace id to quote to Meta support
-- [Several WABAs on one deployment](./docs/multi-waba.md) — one Meta
-  App or several; how `META_APP_SECRET` takes a comma-separated list
-- [Auth emails](./docs/auth-emails.md) — what Supabase must allow so
-  confirmation and password-reset links come back to *your* domain
-  instead of `localhost:3000`, and how `/auth/callback` handles them
+Copy `.env.example` to `.env.local` and configure your credentials:
 
-## Stack
+```bash
+# Core Supabase Cloud
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+SUPABASE_SERVICE_ROLE_KEY=your-supabase-service-role-key
 
-- **App** — Next.js 16 (App Router), React 19, TypeScript, Tailwind v4.
-- **Data** — Supabase (Postgres + Auth + Storage + RLS).
-- **WhatsApp** — Meta Cloud API (official WhatsApp Business API).
+# App & Domain
+NEXT_PUBLIC_SITE_URL=https://your-domain.vercel.app
+NEXT_PUBLIC_APP_LOCALE=en
 
-## Contributing
+# Meta / WhatsApp Business API
+META_APP_ID=your-meta-app-id
+META_APP_SECRET=your-meta-app-secret
+ENCRYPTION_KEY=your-32-byte-hex-encryption-key
 
-This is a template, not a collaborative product — the expected flow is
-fork → customise → deploy, **not** upstream contribution. Bug reports
-and security issues are welcome; feature PRs often belong in your fork
-rather than here. Details in
-[`CONTRIBUTING.md`](./CONTRIBUTING.md) and
-[`.github/SECURITY.md`](./.github/SECURITY.md).
+# Optional Expansion APIs (Autonomous Fallback active if left blank)
+OPENAI_API_KEY=
+GEMINI_API_KEY=
+FLOW_AI_API_KEY=
+INSTAGRAM_ACCOUNT_ID=
+META_USER_ACCESS_TOKEN=
+YOUTUBE_CLIENT_ID=
+YOUTUBE_CLIENT_SECRET=
+YOUTUBE_REFRESH_TOKEN=
+RAZORPAY_KEY_ID=
+RAZORPAY_KEY_SECRET=
+```
 
-## License
+---
 
-[MIT](./LICENSE). Fork it, brand it, host it.
+## 🧪 Testing & Validation
+
+```bash
+# Typecheck
+npm run typecheck
+
+# Automated Test Suite (1,075 tests)
+npm run test
+
+# Production Build Test
+npm run build
+
+# Live JARVIS Engine Integration Test
+node scripts/test_jarvis_live.js
+```
+
+---
+
+## 📄 License & Ownership
+
+© 2026 **Shree Radhe Krishna Digital Service** (Sadhli, Vadodara, Gujarat).  
+Licensed under the [MIT License](./LICENSE).

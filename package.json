@@ -1,17 +1,15 @@
 {
-  "name": "wacrm",
-  "version": "0.8.0",
+  "name": "jarvis-os",
+  "version": "1.0.0",
   "private": true,
-  "description": "Self-hostable CRM template for WhatsApp built on Next.js and Supabase — shared inbox, contacts, sales pipelines, broadcasts, and no-code automations.",
+  "description": "JARVIS – AI Social Media Content & Marketing Operating System for Shree Radhe Krishna Digital Service with integrated WhatsApp CRM and Citizen Services Portal.",
   "license": "MIT",
-  "author": "Arnas Donauskas",
-  "homepage": "https://github.com/ArnasDon/wacrm",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArnasDon/wacrm.git"
+    "url": "git+https://github.com/khushidigitalseva11-hub/whatsapp-crm.git"
   },
   "bugs": {
-    "url": "https://github.com/ArnasDon/wacrm/issues"
+    "url": "https://github.com/khushidigitalseva11-hub/whatsapp-crm/issues"
   },
   "keywords": [
     "crm",
