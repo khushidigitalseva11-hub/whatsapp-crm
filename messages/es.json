@@ -19,6 +19,8 @@
   "Sidebar": {
     "title": "Plantilla de CRM para WhatsApp",
     "primaryNav": "Principal",
+    "jarvisStudio": "JARVIS Studio",
+    "digitalServices": "Servicios Digitales",
     "dashboard": "Panel",
     "inbox": "Bandeja de entrada",
     "notifications": "Notificaciones",
@@ -44,6 +46,8 @@
     "menuSignOut": "Cerrar sesión"
   },
   "Header": {
+    "jarvisStudio": "JARVIS Studio",
+    "digitalServices": "Servicios Digitales",
     "dashboard": "Panel",
     "inbox": "Bandeja de entrada",
     "notifications": "Notificaciones",

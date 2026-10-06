@@ -19,6 +19,8 @@
   "Sidebar": {
     "title": "WhatsApp용 CRM 템플릿",
     "primaryNav": "기본 메뉴",
+    "jarvisStudio": "JARVIS Studio",
+    "digitalServices": "디지털 서비스",
     "dashboard": "대시보드",
     "inbox": "인박스",
     "notifications": "알림",
@@ -44,6 +46,8 @@
     "menuSignOut": "로그아웃"
   },
   "Header": {
+    "jarvisStudio": "JARVIS Studio",
+    "digitalServices": "디지털 서비스",
     "dashboard": "대시보드",
     "inbox": "인박스",
     "notifications": "알림",

@@ -30,5 +30,11 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "_ARCHIVED_ORIGINALS",
+    "SHREE-RADHE-KRISHNA-DIGITAL-SERVICE",
+    "SRK_Digital_Service_Project",
+    "JARVIS-AI-OPERATING-SYSTEM"
+  ]
 }

@@ -19,6 +19,8 @@
   "Sidebar": {
     "title": "CRM Template for WhatsApp",
     "primaryNav": "Primary",
+    "jarvisStudio": "JARVIS Studio",
+    "digitalServices": "Digital Services",
     "dashboard": "Dashboard",
     "inbox": "Inbox",
     "notifications": "Notifications",
@@ -44,6 +46,8 @@
     "menuSignOut": "Sign out"
   },
   "Header": {
+    "jarvisStudio": "JARVIS Studio",
+    "digitalServices": "Digital Services",
     "dashboard": "Dashboard",
     "inbox": "Inbox",
     "notifications": "Notifications",

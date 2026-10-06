@@ -19,6 +19,8 @@ import {
 import { ModeToggle } from "@/components/layout/mode-toggle";
 
 const pageTitles: Record<string, string> = {
+  "/jarvis": "jarvisStudio",
+  "/portal": "digitalServices",
   "/dashboard": "dashboard",
   "/inbox": "inbox",
   "/notifications": "notifications",

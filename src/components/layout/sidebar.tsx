@@ -10,6 +10,8 @@ import { useUnreadNotifications } from "@/hooks/use-unread-notifications";
 import {
   Bell,
   Bot,
+  Brain,
+  Building2,
   Crown,
   GitBranch,
   LayoutDashboard,
@@ -90,8 +92,10 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
+  { href: "/jarvis", labelKey: "jarvisStudio", icon: Brain },
   { href: "/dashboard", labelKey: "dashboard", icon: LayoutDashboard },
   { href: "/inbox", labelKey: "inbox", icon: MessageSquare },
+  { href: "/portal", labelKey: "digitalServices", icon: Building2 },
   { href: "/notifications", labelKey: "notifications", icon: Bell },
   { href: "/contacts", labelKey: "contacts", icon: Users },
   { href: "/pipelines", labelKey: "pipelines", icon: GitBranch },
