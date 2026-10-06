@@ -1,0 +1,11 @@
+# Vercel Deployment Ignore Rules
+_ARCHIVED_ORIGINALS/
+scripts/
+docs/
+*.md
+!README.md
+vitest.config.ts
+**/*.test.ts
+**/*.test.tsx
+.env*
+!.env.example
